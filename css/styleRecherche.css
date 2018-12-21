@@ -1,0 +1,17 @@
+.radio{
+   display:inline-block;
+   margin-left:50px;
+   margin-bottom:10px;
+}
+
+#contentrecherche>div{
+   padding:25px 25px;
+}
+
+#radiobutton{
+   margin-bottom:50px;
+}
+
+#content-radiobutton{
+   margin-bottom:50px;
+}

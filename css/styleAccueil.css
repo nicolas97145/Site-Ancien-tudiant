@@ -1,0 +1,228 @@
+@import url(http://fonts.googleapis.com/css?family=Montserrat:400,700);
+
+
+span{
+    font-weight: bold;
+}
+
+a{
+   color: #cf4d35;
+   text-decoration: none;
+}
+
+a:hover {
+    color: #cf4d35;
+    text-decoration: underline;
+}
+
+.trait{
+    width: 75%;
+    margin: auto;
+    border-style: solid;
+    border-width: 1px;
+    border-color:  #444B58;
+}
+
+/*Box contenant toute les box d'actualite*/
+.box-principal{
+    max-width: 55%;
+    background: #F9F9F9;
+    margin: 40px auto;
+    padding: 20px;
+    font-family: Georgia, "Times New Roman", Times, serif;
+    box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1);
+}
+
+#box-principal-one{
+    width:100%;
+    height:400px;
+    text-align: center;
+    margin-top: 1%;
+    margin-bottom: 5%;
+}
+
+#box-principal-two{
+    width:100%;
+    height:400px;
+    text-align: center;
+    
+}
+
+/**********************************/
+/**********Style box lycee********/
+/********************************/
+
+/*Box principal contenant la barre et l'actualite*/
+#box_lycee{
+    width: 25%;
+    max-height: 95%;
+    min-height: 40%;
+    display: inline-block;
+    position: absolute;
+    left : 23%;
+    margin-left: auto;
+    margin-right: auto;
+    background: #FFFFFF;
+    font-family: Georgia, "Times New Roman", Times, serif;
+    box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1);  
+}
+
+/*Box contenant la barre de couleur*/
+#barre_box_lycee{
+    width: 100%;
+    height: 15%;
+    background: #FA6610;  
+}
+
+.titre_categorie_actualite{
+    padding-left: 2%;
+    color : white;
+    font-family: '../font/Silica-Light.ttf', Arial, Helvetica, sans-serif;
+    font-size: 24px;
+    font-weight: bold; 
+}
+
+/*Box contenant l'actualite'*/
+#actualite_box_lycee{
+    padding: 20px;
+}
+
+
+/**********************************/
+/********Style box mariage********/
+/********************************/
+
+/*Box principal contenant la barre et l'actualite*/
+#box_mariage{
+    width: 25%;
+    max-height: 95%;
+    min-height: 40%;
+    display: inline-block;
+    position: absolute;
+    right : 23%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-left: 3%;
+    background: #FFFFFF;
+    font-family: Georgia, "Times New Roman", Times, serif;
+    box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1);
+}
+
+/*Box contenant la barre de couleur*/
+#barre_box_mariage{
+    width: 100%;
+    height: 5%;
+    background: #F4A314;
+}
+
+/*Box contenant l'actualite'*/
+#actualite_box_mariage{
+    padding: 20px;
+}
+
+
+/**********************************/
+/*********Style box deces*********/
+/********************************/
+
+/*Box principal contenant la barre et l'actualite*/
+#box_deces{
+    width: 25%;
+    max-height: 95%;
+    min-height: 40%;
+    display: inline-block;
+    position: absolute;
+    left : 20%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-left: 3%;
+    background: #FFFFFF;
+    font-family: Georgia, "Times New Roman", Times, serif;
+    box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1);
+}
+
+/*Box contenant la barre de couleur*/
+#barre_box_deces{
+    width: 100%;
+    height: 5%;
+    background: #433E92;
+}
+
+/*Box contenant l'actualite'*/
+#actualite_box_deces{
+    padding: 20px;
+}
+
+
+/**********************************/
+/*******Style box naissance*******/
+/********************************/
+
+/*Box principal contenant la barre et l'actualite*/
+#box_naissance{
+    width: 25%;
+    max-height: 95%;
+    min-height: 40%;
+    display: inline-block;
+    position: absolute;
+    right : 23%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-left: 3%;
+    background: #FFFFFF;
+    font-family: Georgia, "Times New Roman", Times, serif;
+    box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1);
+}
+
+/*Box contenant la barre de couleur*/
+#barre_box_naissance{
+    width: 100%;
+    height: 5%;
+    background: #3BA52B;
+}
+
+/*Box contenant l'actualite'*/
+#actualite_box_naissance{
+    padding: 20px;
+}
+@media screen and (max-width: 768px) {
+    /**********************************/
+    /**********Style box lycee********/
+    /********************************/
+
+    /*Box principal contenant la barre et l'actualite*/
+    #box_lycee{
+        width: 37%;
+        left : 10%; 
+    }
+    /**********************************/
+    /********Style box mariage********/
+    /********************************/
+
+    /*Box principal contenant la barre et l'actualite*/
+    #box_mariage{
+        width: 37%;
+        right : 10%;
+    }
+    /**********************************/
+    /*********Style box deces*********/
+    /********************************/
+
+    /*Box principal contenant la barre et l'actualite*/
+    #box_deces{
+        width: 37%;   
+        left : 7%;
+ 
+    }
+    /**********************************/
+    /*******Style box naissance*******/
+    /********************************/
+
+    /*Box principal contenant la barre et l'actualite*/
+    #box_naissance{
+        width: 37%;
+        right :10%;
+    }
+}
+
+

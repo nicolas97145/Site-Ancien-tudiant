@@ -1,0 +1,143 @@
+﻿/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 21 déc. 2015, 19:29:57
+    Author     : Maxime
+*/
+
+@import url(http://fonts.googleapis.com/css?family=Montserrat:400,700);
+
+.box-principalProfil{
+    max-width: 90%;
+    padding: 10px 20px;
+    background: #EEEEEE;
+    margin: 40px auto;
+    padding: 20px;
+    font-family: Georgia, "Times New Roman", Times, serif;
+    box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1);
+}
+
+.filArianeProfil{
+    max-width: 90%;
+    background: #FFFFFF;
+    margin: 40px auto;
+    padding: 10px 20px;
+    font-family: "time new roman";
+    font-size: 110%;
+    font-weight: 400;
+    color : #444B58;
+    box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1);
+}
+
+.number {
+    color: #fff;
+    height: 32px;
+    width: 35px;
+    display: inline-block;
+    font-size: 0.8em;
+    margin-right: 4px;
+    line-height: 30px;
+    text-align: center;
+    text-shadow: 0 1px 0 rgba(255,255,255,0.2);
+    border-radius: 15px 15px 15px 0px;
+}
+
+#number1 {
+    background: #FA6610;
+}   
+
+#number2 {
+    background: #F4A314;
+}   
+
+#number3 {
+    background: #3BA52B;
+}   
+
+#number4 {
+    background: #2781B6;
+}   
+
+#number5 {
+    background: #433E92;
+}  
+#number6 {
+    background: #FF4040;
+}  
+
+#information_non_renseigne{
+    font-family: 'Montserrat', Arial, Helvetica, sans-serif; 
+    text-align: center;
+}
+#tableauProfil
+{
+    text-align: center;
+    display: absolute;
+    font-family: 'Montserrat', Arial, Helvetica, sans-serif;
+    padding: 10px 20px;
+    margin: 40px auto;
+
+}
+#tableauFormation
+{
+    text-align: center;
+    display: absolute;
+    font-family: 'Montserrat', Arial, Helvetica, sans-serif;
+    padding: 10px 20px;
+    margin: 40px -10%;
+
+}
+#tableauStage
+{
+    text-align: center;
+    display: absolute;
+    font-family: 'Montserrat', Arial, Helvetica, sans-serif;
+    padding: 10px 20px;
+    margin: 40px auto;
+}
+
+.selectForm{
+    font-family: Georgia, "Times New Roman", Times, serif;
+    background: #D4D4D4;
+    border: none;
+    border-radius: 0px;
+    font-size: 16px;
+    margin-left: 20%;
+    outline: 0;
+    padding: 15px;
+    max-width: 76%;
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    background-color: white;
+    color:#8a97a0;
+    -webkit-box-shadow: 0 1px 0 rgba(0,0,0,0.03) inset;
+    box-shadow: 0 1px 0 rgba(0,0,0,0.03) inset;
+    -webkit-appearance: menulist-button;
+    height:53px;
+    border-color: #CF4D35;
+    border-style: solid;
+    border-width: 2px;
+    margin-bottom: 9%;
+}
+
+/**************************************/
+/**Box de secondaire pour profil. php**/
+/**************************************/
+.box-secondaire{
+    max-width: 70%;
+    padding: 10px 20px;
+    background: #F9F9F9;
+    margin: 40px auto;
+    padding: 20px;
+    
+    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+th,td
+{
+    
+}

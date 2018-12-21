@@ -1,0 +1,267 @@
+﻿/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/*
+    Created on : 16 déc. 2015, 16:21:37
+    Author     : La team tipiak
+*/
+
+@import url(http://fonts.googleapis.com/css?family=Montserrat:400,700);
+@import url(https://fonts.googleapis.com/css?family=Roboto:300);
+
+body{
+    background-image: url(../images/background.png);
+    background: #E0E2E0;
+    margin: 0;
+    padding: 0;
+}
+
+.top-header{
+    background: #e5e5e5;
+    background: #3A3A3A;
+    width: 100%;
+    height: 40px;
+}
+
+.bottom-header{
+    background: #e5e5e5;
+    background: #FFFFFF;
+    width: 100%;
+    height: 180px;
+}
+
+#logo{
+    margin-left: 21%;
+    display: block;
+    margin-right: auto;
+}
+
+.filAriane{
+    max-width: 55%;
+    background: #FFFFFF;
+    margin: 40px auto;
+    padding: 10px 20px;
+    font-family: "time new roman";
+    font-size: 110%;
+    font-weight: 400;
+    color : #444B58;
+    box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1);
+}
+
+.filAriane a {
+    color: #cf4d35;
+    text-decoration: none;
+}
+
+.filAriane a:hover {
+    color: #cf4d35;
+    text-decoration: underline;
+}
+
+/**********************/
+/**Apparence du texte**/
+/**********************/
+h1{
+    font-family: 'Roboto', Arial, Helvetica, sans-serif;
+    color: #028fcc;
+}
+
+p, h2{
+    font-family: 'Montserrat', Arial, Helvetica, sans-serif;
+    font-weight: 400;
+    text-align: center;
+}
+
+a
+{
+    text-decoration: none;
+}
+
+/***********/
+/***********/
+/***********/
+footer{
+    margin: 0;
+    width: 100%;
+    height: 5%;
+    background-color : #24252A;
+}
+
+.text-footer{
+    color : #B9BABB;
+    margin-left : 21.5%;
+    font-family: 'Montserrat', Arial, Helvetica, sans-serif;
+}
+
+#message_envoye{
+    text-align: center;
+    font-family: 'Montserrat', Arial, Helvetica, sans-serif;
+}
+
+/***************************/
+/**Box de toutes les pages**/
+/***************************/
+.box-principal{
+    max-width: 55%;
+    padding: 10px 20px;
+    background: #EEEEEE;
+    margin: 40px auto;
+    padding: 20px;
+    font-family: Georgia, "Times New Roman", Times, serif;
+    box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1);
+}
+
+/*************************/
+/*********Inputs**********/
+/****Champs à remplir*****/
+.titre{
+    color:#3c3c3c;
+    background: #E9E9E9 none repeat scroll 0% 0%;
+    font-family: "Roboto",sans-serif;
+    font-weight:500;
+    font-size: 18px;
+    padding: 13px 13px 13px 5px;
+    margin-bottom: 15px;
+    margin-left: auto;
+    width:90%;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -ms-box-sizing: border-box;
+    box-sizing: border-box;
+    border: 0px none;
+}
+
+.hide-span{
+  visibility: hidden;
+  color:red;
+  display:block;
+}
+
+
+/*************************/
+/****Listes déroulante****/
+/*************************/
+.select{
+    font-family: "Roboto",sans-serif;
+    background: #F2F2F2;
+    border: none;
+    border-radius: 0px;
+    font-size: 16px;
+    margin-left: auto;
+    outline: 0;
+    padding: 7px;
+    width: 65%;
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    background-color: white;
+    color:#8a97a0;
+    -webkit-box-shadow: 0 1px 0 rgba(0,0,0,0.03) inset;
+    box-shadow: 0 1px 0 rgba(0,0,0,0.03) inset;
+    margin-bottom: 30px;
+    -webkit-appearance: menulist-button;
+    height:45px;
+    border-color: black;
+    border-style: solid;
+    border-width: 1px;
+}
+
+/*************************/
+/*********Boutons*********/
+/*************************/
+/*.bouton {
+  margin: 0 auto;
+  font-size: 2.0rem;
+  padding: 1.25rem 2.5rem;
+  display: block;
+  background-color: #CF4D35;
+  border: 3px solid transparent;
+  color: #ffffff;
+  font-weight: 300;
+  -webkit-border-radius: 3px;
+  border-radius: 3px;
+  -webkit-transition: all 0.3s ease-in-out;
+  -moz-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  font: 400 1.4rem 'Lato', Verdana, Helvetica, sans-serif;
+  margin-top: 30px;
+}
+
+.bouton:hover {
+  background-color: #ffffff;
+  color: #CF4D35;
+  border-color: #CF4D35;
+}*/
+
+
+button, .recherche-header {
+  font-family: "Roboto", sans-serif;
+  text-transform: uppercase;
+  display: block;
+  background: #028fcc;
+  border: 0;
+  margin: 0 auto;
+  padding: 15px;
+  color: #FFFFFF;
+  font-size: 14px;
+  -webkit-transition: all 0.3 ease;
+  transition: all 0.3 ease;
+  cursor: pointer;
+}
+button:hover,button:active, button:focus, .recherche-header:hover {
+  background: #0280B5;
+}
+
+.recherche-content{
+  background-color: #E0E2E0;
+  padding: 0px 20px 20px 20px;
+}
+
+.recherche-content-resultat{
+  background: #EEEEEE;
+  padding: 20px;
+}
+
+.recherche-content{
+  display:none;
+}
+
+.bouton
+{
+    font-family: "Roboto", sans-serif;
+    text-transform: uppercase;
+    display: block;
+    background: #028fcc;
+    border: 0;
+    margin: 0 auto;
+    padding: 15px;
+    color: #FFFFFF;
+    font-size: 14px;
+    -webkit-transition: all 0.3 ease;
+    transition: all 0.3 ease;
+    cursor: pointer;
+}
+.bouton:hover, bouton:active, bouton:focus {
+    background: #0280B5;
+}
+
+.input{
+  margin-bottom:20px;
+}
+
+@media screen and (max-width: 768px) {
+   #logo{
+       max-width: 80%;
+   }
+   .box-principal{
+    max-width: 75%;
+   }
+   .box-secondaire{
+    max-width: 100%;
+   }
+   .filAriane{
+    max-width: 75%;
+   }
+}

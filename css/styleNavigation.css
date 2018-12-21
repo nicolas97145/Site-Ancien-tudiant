@@ -1,0 +1,189 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 19 d�c. 2015, 14:52:19
+    Author     : Yohan
+*/
+
+@import url(http://fonts.googleapis.com/css?family=Open+Sans:700);
+
+#cssmenu {
+    background: #028fcc;
+    width: auto;
+    
+}
+#cssmenu ul {
+    list-style: none;
+    margin: 0 0 0 20%;
+    padding: 0;
+    line-height: 1;
+    display: block;zoom:1;
+}
+#cssmenu ul:after {
+    content: " ";
+    display: block;
+    font-size: 0;
+    height: 0;
+    clear: both;
+    visibility: hidden;
+}
+#cssmenu ul li {
+    float: left;
+    padding: 0;
+    margin: 0;
+}
+#cssmenu.align-right ul li {
+    float: right;
+}
+#cssmenu.align-center ul {
+    text-align: center;
+}
+#cssmenu ul li a {
+    color: #ffffff;
+    text-decoration: none;
+    display: block;
+    padding: 15px 25px;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 700;
+    text-transform: uppercase;
+    font-size: 14px;
+    position: relative;
+    -webkit-transition: color .25s;
+    -moz-transition: color .25s;
+    -ms-transition: color .25s;
+    -o-transition: color .25s;
+    transition: color .25s;
+}
+#cssmenu ul li a:hover {
+    color: #1F1F1F;
+}
+#cssmenu ul li a:hover:before {
+    width: 100%;
+}
+#cssmenu ul li a:after {
+    content: "";
+    display: block;
+    position: absolute;
+    right: -3px;
+    top: 19px;
+    height: 6px;
+    width: 6px;
+    background: #Ffffff;
+    opacity: .5;
+}
+#cssmenu ul li a:before {
+    content: "";
+    display: block;
+    position: absolute;
+    left: 0px;
+    bottom: 0;
+    height: 3px;
+    width: 0;
+    background: #1F1F1F;
+    -webkit-transition: width .25s;
+    -moz-transition: width .25s;
+    -ms-transition: width .25s;
+    -o-transition: width .25s;
+    transition: width .25s;
+}
+#cssmenu ul li.last > a:after,
+#cssmenu ul li:last-child > a:after {
+    display: none;
+}
+#cssmenu ul li.active a {
+    color: #1F1F1F;
+}
+#cssmenu ul li.active a:before {
+    width: 100%;
+}
+#cssmenu.align-right li.last > a:after,
+#cssmenu.align-right li:last-child > a:after {
+    display: block;
+}
+#cssmenu.align-right li:first-child a:after {
+    display: none;
+}
+@media screen and (max-width: 768px) {
+    #cssmenu ul li {
+        float: none;
+        display: block;
+    }
+    #cssmenu ul li a {
+        width: 100%;
+        -moz-box-sizing: border-box;
+        -webkit-box-sizing: border-box;
+        box-sizing: border-box;
+        border-bottom: 1px solid #fb998c;
+    }
+    #cssmenu ul li.last > a,
+    #cssmenu ul li:last-child > a {
+        border: 0;
+    }
+    #cssmenu ul li a:after {
+        display: none;
+    }
+    #cssmenu ul li a:before {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 1366px) {  
+    #cssmenu ul li a {  
+    font-size: 12px;
+    }
+}
+
+@media screen and (max-width: 1280px) {  
+    #cssmenu ul li a {  
+    font-size: 11px;
+    }
+}
+/********************/
+/***Menu déroulant***/
+/********************/
+#cssmenu ul li ul {
+    display:none;/******cache le sous menu******/
+}
+#cssmenu ul li:hover ul {
+    display:block;/******affiche le sous menu au survol de la souris******/
+    width: 111px;
+}
+#cssmenu ul li:hover ul a{
+    padding-left:10px;
+}
+#cssmenu li:hover ul li {
+    float: none;/******affiche le sous menu à la verticale******/
+}
+#cssmenu li ul {
+    position: absolute;/******affiche uniquement le sous menu******/
+    margin: 0;/******affiche le sous menu en dessous de l'onglet survolé******/
+    background: #028fcc;
+}
+#cssmenu li.active ul li a{
+    color: #FFFFFF;
+}
+
+#cssmenu ul li:hover ul li a:after{
+    display: none;/******enlève le petit carré après le nom de l'onglet******/
+}
+#cssmenu ul li.active ul li a:before{
+    display: none;/******enlève le soulignage du sous menu******/
+}
+#cssmenu li.active ul li:hover a {
+    color: #1F1F1F;
+    width: 75px;
+    border-bottom: 3px solid #1F1F1F;
+    -webkit-transition: width .25s;
+    -moz-transition: width .25s;
+    -ms-transition: width .25s;
+    -o-transition: width .25s;
+    transition: width .25s;
+    -webkit-transition: color .25s;
+    -moz-transition: color .25s;
+    -ms-transition: color .25s;
+    -o-transition: color .25s;
+    transition: color .25s;
+}
