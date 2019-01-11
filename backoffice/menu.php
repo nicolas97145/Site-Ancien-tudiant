@@ -11,7 +11,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" href="../css/styleNavigation.css">
         <script src="http://code.jquery.com/jquery-latest.min.js" type="text/javascript"></script>
-        <script src="script.js"></script>
+        <script type="text/javascript" src="../js/custom.js"></script>
         <title>CSS MenuMaker</title>
     </head>
     <body>
@@ -43,6 +43,9 @@
                         echo "<li><a href='choix_gestion_compte.php' ><span>Comptes</span></a></li>";
                         echo "<li><a href='choix_gestion_actualite.php'><span>Actualités</span></a></li>";
                         echo "<li><a href='choix_gestion_section.php'> <span>Sections BTS</span></a></li>";
+                        echo "<li><a href='choix_gestion_entreprise.php'><span>Entreprises</span></a></li>";
+                        echo "<li><a href='choix_gestion_etablissement.php'><span>Éta- blissements</span></a></li>";
+                        echo "<li><a href='choix_gestion_secteuractivite.php'> <span>Secteurs d'activités</span></a></li>";
                         echo "</ul></li>";
                         if ($_SESSION["page"]=="pourcentage")
                         {
@@ -77,7 +80,8 @@
 						 $_SESSION['deco']='1';
 					}
                 ?>
-				<li><a><?php echo $_SESSION['nom_etudiant'];?></a></li>
+                <li><img src="../images/bonhomme.png" alt="bonhomme" title="bonhomme"></li>
+				<li><a id='afficheImage'><?php echo $_SESSION['nom_etudiant'];?></a></li>
             </ul>
         </div>
     </body>

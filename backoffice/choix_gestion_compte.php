@@ -62,11 +62,11 @@
                 <p>Quel compte va être supprimé ?</p>
                 <select class="select" name="id">
                     <?php
-                    $etudiant="SELECT id, nom, prenom FROM etudiant";
-                    $resultat = $connexion->query($etudiant);
-                    while($ligne=$resultat->fetch()){
-                      echo "<option value='".$ligne['id']."'>".$ligne['nom']." ".$ligne['prenom']."</option>";
-                    }
+                        $etudiant="SELECT id, nom, prenom FROM etudiant";
+                        $resultat = $connexion->query($etudiant);
+                        while($ligne=$resultat->fetch()){
+                          echo "<option value='".$ligne['id']."'>".$ligne['nom']." ".$ligne['prenom']."</option>";
+                        }
                     ?>
                 </select>
                 <button>Supprimer ce compte</button>

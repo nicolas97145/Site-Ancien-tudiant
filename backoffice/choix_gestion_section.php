@@ -25,7 +25,7 @@
         <div id="divPrincipal" class="box-principal">
             <h1>Création d'une section de BTS</h1>
             <form method="post" action="traitement/ajout_section.php">
-                <p id="erreurtitre"></p>
+				<input placeholder="ID (sigle) du secteur d'activité" name="idBTS" type="text" class="titre" required/>
                 <input placeholder="Nom de la section de BTS" name="nomBts" type="text" class="titre" required/>
                 <input class='bouton' type="submit" value="Créer la catégorie"/> 
             </form>
@@ -34,12 +34,13 @@
         <div id="divPrincipal" class="box-principal">
             <h1>Modification d'une section de BTS</h1>
             <form method="post" action="traitement/modification_section.php">
-                <p id="erreurtitre"></p>
-                <select class="select" name="id">
+                <p>Quelle section va être modifié ? </p>
+                
+                <select class="select" name="idbts">
                     <?php
                         while($lgn = $query_select->fetch())
                         {
-                            echo '<option value="'.$lgn["id"].'">'.$lgn["libelleBTS"].'</option>';
+                            echo '<option value="'.$lgn["id"].'">'.$lgn["id"].'</option>';
                         }
                     ?>
                 </select>
@@ -48,19 +49,23 @@
         </div>
         
         <div id="divPrincipal" class="box-principal">
+            <h1>Suppression d'une section de BTS</h1>
             <form method="post" action="traitement/suppression_section.php">
-                <h1>Suppression d'une section de BTS</h1>
+                
                 <p>Quelle section va être supprimée ?</p>
+                
                 <select class="select" name="id">
                     <?php
+						$select_comptes = ('Select * from bts');
+						$query_select = $connexion->query($select_comptes);
                         while($lgn = $query_select->fetch())
                         {
-                            echo '<option value="'.$lgn["id"].'">'.$lgn["libelleBTS"].'</option>';
+                            echo '<option value="'.$lgn["id"].'">'.$lgn["id"].'</option>';
                         }
                     ?>
                 </select>
                 <input class='bouton' type="submit" value="Supprimer cette catégorie"/>
             </form>
-	</div>
+		</div>
     </body>
 </html>

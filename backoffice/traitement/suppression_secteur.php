@@ -7,8 +7,8 @@
 
     $id = html_entity_decode($_POST["id"]);
     
-    $delete_bts = ("delete from bts where id = '$id'");
-    $exec_delete = $connexion->exec($delete_bts);
+    $delete_secteur = ("delete from secteuractivite where id = '$id'");
+    $exec_delete = $connexion->exec($delete_secteur);
 ?>
 <html>
     <head>
@@ -22,8 +22,8 @@
         <aside><!-- Les à-cotés de la page --></aside>
         <article>
             <!-- Contenu textuel de la page -->
-            <meta http-equiv="refresh" content="2;../choix_gestion_section.php" />
-            <p id="message_envoye">Votre section a bien été supprimée. Vous allez etre redirigé vers la page de gestion des sections dans quelques secondes.</p>
+            <meta http-equiv="refresh" content="2;../choix_gestion_secteuractivite.php" />
+            <p id="message_envoye">Votre secteur a bien été supprimé. Vous allez etre redirigé vers la page de gestion des secteurs d'activités dans quelques secondes.</p>
         </article>
         <footer><!-- Pied-de-page de la page -> site --></footer>
     </body>
